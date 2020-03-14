@@ -8,7 +8,7 @@ E-mail your Google Calendar daily activities directly to your email via Google's
 1. $pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
 2. $export EMAIL='{ENTER YOUR EMAIL}'
 3. Google permissions/authorizations - just the first time to make the token.pickle file
-4. Google API `credentials.json` file (can get your own [here - go to 'Enable the Google Calendar'](https://developers.google.com/calendar/quickstart/python)
+4. Google API `credentials.json` file (can get your own [here - go to 'Enable the Google Calendar'](https://developers.google.com/calendar/quickstart/python))
 5. Python 3.
 
 ## To Run
