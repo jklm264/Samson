@@ -29,6 +29,16 @@ def CreateMessage(sender, to, subject, message_text):
   # https://developers.google.com/gmail/api/v1/reference/users/messages/modify
   return {'raw': base64.urlsafe_b64encode(message.as_bytes()).decode()}
 
+# Instead of using credentialing(), can use code below
+# def _build_service():
+#    scope = 'https://www.googleapis.com/auth/calendar.readonly'
+#    credentials = ServiceAccountCredentials.from_json_keyfile_dict(
+#        keyfile_dict=app.config.get("SERVICE_ACCOUNT_INFO"),
+#        scopes=scope)
+#    service = discovery.build('calendar', 'v3', credentials=credentials)
+#    return service
+
+
 def credentialing():
     creds = None
     if os.path.exists('token.pickle'):
